@@ -8,7 +8,7 @@ import TextLogo from 'assets/images/TextLogo.svg';
 import Arrow from "assets/icons/arrow.svg";
 
 export default function Index() {
-  const { replace } = useRouter();
+  const { push, replace } = useRouter();
 
   return (
     <View className="flex-1 px-[20px] h-full bg-light justify-center items-center">
@@ -20,7 +20,7 @@ export default function Index() {
         <AppText color="darkGray" className="text-[16px] text-center mb-6">Чтобы войти, подтвердите что вы студент</AppText>
         <Button
         onPress={() => replace('/(screens)/(auth)/register')}
-        textStyles="font-medium gap-2 flex-row items-center"
+        className="gap-2 flex-row items-center"
         icon={
           <View className="-rotate-90">
             <Arrow width={20} height={16.8} color="#F8F9FA"/>
@@ -29,7 +29,9 @@ export default function Index() {
           Загрузить документ
         </Button>
       </View>
-      <TouchableOpacity className="absolute bottom-20">
+      <TouchableOpacity
+      onPress={() => push('/(screens)/(auth)/login')}
+      className="absolute bottom-20">
         <AppText className="text-[18px] font-semibold">У вас уже есть аккаунт?</AppText>
       </TouchableOpacity>
     </View>
