@@ -3,11 +3,15 @@ import Input from "@/components/ui/input";
 import AppText from "@/components/ui/appText";
 import Button from "@/components/ui/button";
 
+import { useRouter } from "expo-router";
+
 import Arrow from 'assets/icons/arrow.svg';
 
 import TextLogo from 'assets/images/textLogo.svg';
 
 const RegisterScreen = () => {
+    const { replace } = useRouter();
+    
     return (  
         <KeyboardAvoidingView
         behavior="padding"
@@ -28,6 +32,7 @@ const RegisterScreen = () => {
                 placeholder="Подтвердите пароль"/>
             </View>
             <Button
+            onPress={() => replace('/(screens)/(auth)/knowing')}
             className="gap-2 justify-center w-full"
             icon={<Arrow width={20} height={16.8} color="#F8F9FA"/>}
             >
