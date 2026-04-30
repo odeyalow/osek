@@ -4,7 +4,7 @@ import Button from "components/ui/button";
 
 import { useRouter } from "expo-router";
 
-import TextLogo from 'assets/images/TextLogo.svg';
+import TextLogo from 'assets/images/textLogo.svg';
 import Arrow from "assets/icons/arrow.svg";
 
 export default function Index() {

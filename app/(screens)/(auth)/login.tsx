@@ -5,7 +5,7 @@ import Button from "@/components/ui/button";
 
 import { useRouter } from "expo-router";
 
-import TextLogo from 'assets/images/TextLogo.svg';
+import TextLogo from 'assets/images/textLogo.svg';
 
 const LoginScreen = () => {
     const { back, replace } = useRouter();

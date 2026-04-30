@@ -5,7 +5,7 @@ import Button from "@/components/ui/button";
 
 import Arrow from 'assets/icons/arrow.svg';
 
-import TextLogo from 'assets/images/TextLogo.svg';
+import TextLogo from 'assets/images/textLogo.svg';
 
 const RegisterScreen = () => {
     return (  
