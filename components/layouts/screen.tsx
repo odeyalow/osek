@@ -3,11 +3,12 @@ import { View } from 'react-native';
 
 type ScreenProps = {
   children?: ReactNode;
+  className?: string;
 };
 
-export function Screen({ children }: ScreenProps) {
+export function Screen({ children, className }: ScreenProps) {
   return (
-    <View className="flex-1 px-[15px]">
+    <View className={`flex-1 p-[20px] bg-light ${className}`}>
       {children}
     </View>
   );
